@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "poppons", "arial";
+}
+
+.home-img{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    filter: blur(0.8px) brightness(75%);
+    transition: all 1s ease;
+    &:hover{
+        filter: blur(0) brightness(100%);
+    }
+}
+
+.home-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.porfolio-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media (max-width: 480px){
+    .home-img{
+    width: 350px;
+    height: 350px;
+    }  
+}
